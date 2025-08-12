@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body{
+        font-family: Arial, sans-serif;
+        background: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        }
+        .login-container {
+        background: white;
+        padding: 2em; /* using em for padding */
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        width: 300px;
+    }
+    h2{
+        text-align: center;
+        font-size: 1.5em;
+        margin-bottom: 1em;
+    }
+ 
+    label{
+        font-size: 1em;
+        display: block;
+        margin-bottom: 0.5em;
+        color:#333;
+    }
+ 
+    input[type="email"],
+    input[type="password"]
+    {
+        width: 100%;
+        padding: 0.8em;
+        margin-bottom: 1em;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1em;
+    }
+ 
+    button{
+        width: 100%;
+        padding: 0.8em;
+        font-size:1em;
+        background: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+ 
+    button:hover{
+        background: #45a049;
+    }
+ 
+    .extra-links{
+        margin-top: 1em;
+        text-align: center;
+        font-size: 0.9em;
+    }
+ 
+    .mandatory{
+        color: red;
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="table1.html" method="post">
+            <label for="email">Email:
+                <span class="mandatory">*</span>
+            </label>
+            <input type="email" id="email" name="email"
+            placeholder="Enter your Email here" required/>
+            
+            <label for="password">Password:
+                <span class="mandatory">*</span>
+            </label>
+            <input type="password" id="password" name="password"
+            placeholder="Enter your password here" required/>
+ 
+            <button type="submit">Login</button>
+ 
+            <div class="extra-links">
+                <p><a href="#">Forgot Password</a></p>
+                <p><a href="#">Create an Account</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+ 

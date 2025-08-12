@@ -1,0 +1,57 @@
+.container {
+    position: relative; /* Needed for absolute positioning */
+    display: inline-block;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block; /* Removes gap below image */
+    opacity: 1; /* Keep full brightness, remove fade */
+}
+
+.topleft {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+
+.topright {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+
+.bottomright {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
