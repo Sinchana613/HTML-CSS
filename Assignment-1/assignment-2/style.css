@@ -1,0 +1,167 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #2a9d8f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    width: 60px;
+    vertical-align: middle;
+}
+
+header h1 {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+/* Navigation */
+nav {
+    background: #264653;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://picsum.photos/id/1018/1200/500') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* About */
+#about {
+    padding: 40px 20px;
+    background: white;
+    text-align: center;
+}
+
+/* Gallery */
+#gallery {
+    padding: 40px 20px;
+    background: #e9ecef;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Contact Form */
+#contact {
+    padding: 40px 20px;
+    background: white;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form button {
+    background: #2a9d8f;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #1d6f63;
+}
+
+span.required {
+    color: red;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: #264653;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
